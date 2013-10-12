@@ -1,14 +1,16 @@
 HOW TO BUILD
 
-
 --------------------------------------------------------------------------
 PREREQUISITES
 
-Before you can build the Mendocino library, you will need to 
-have a Java JDK installed.  That is where the Java compiler
-is that is used to do the build.
+Before you can build the SSOFI Provider war file, you will need to 
+have a Java JDK installed for the compiler, and you will need
+ANT installed to run the build.
 
 That is the only requirement.
+
+We try to maintain the build guildlines documented in:
+http://agiletribe.wordpress.com/2013/07/16/designing-the-build/
 
 
 --------------------------------------------------------------------------
@@ -28,9 +30,8 @@ network drive, without preventing the ability to make a build.  It is also
 easy to archive the results of a build separately from the source.
 
 
-(2) Copy the contents of the build-source directory.  This is a directory
-within the managed source called "build".  It contains a couple of .bat 
-files.
+(2) Copy from the build folder:  build.bat and build_configuration.example.bat.
+Rename build_configuration.example.bat to build_configuration.bat.
 
 
 (3) Edit the "build_configuration.bat" to enter the values there.  
@@ -48,15 +49,6 @@ RUNNING THE BUILD
 
 All you have to do on Windows is to run "build.bat".    We don't at this time
 have build scripts for other operating systems.
-
-
---------------------------------------------------------------------------
-RUNNING THE TESTS
-
-As every good agile developer knows, the first thing you should do after 
-building a library, is to run the tests and make sure that existings tests 
-were not broken by recent changes.  This is done by executing "test.bat"
-
 
 
 --------------------------------------------------------------------------
