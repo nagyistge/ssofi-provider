@@ -52,7 +52,7 @@ public class AddressParser {
     private boolean isRootAddr = false;
 
     public static void initialize(String pattern) throws Exception {
-        valueBeforeId = OpenIDHandler.baseURL.toLowerCase();
+        valueBeforeId = OpenIDHandler.getBaseURL().toLowerCase();
     }
 
     /**

@@ -1202,4 +1202,8 @@ public class OpenIDHandler implements TemplateTokenRetriever {
         return null;
     }
 
+	public static String getBaseURL() {
+		return baseURL;
+	}
+
 }
